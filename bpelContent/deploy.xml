@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:iaas.uni-stuttgart.de="http://iaas.uni-stuttgart.de">
+  <process name="iaas.uni-stuttgart.de:SitMETestProcess">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="iaas.uni-stuttgart.de:SitMETestProcessService" port="SitMETestProcessPort"/>
+    </provide>
+  </process>
+</deploy>
